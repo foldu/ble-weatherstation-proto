@@ -1,0 +1,5 @@
+target
+bin
+.clangd
+compile_commands.json
+docs/build

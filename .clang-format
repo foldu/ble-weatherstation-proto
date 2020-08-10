@@ -1,0 +1,24 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+IndentCaseLabels: false
+AccessModifierOffset: 0
+
+PointerAlignment: Right
+SortIncludes: true
+
+AllowShortIfStatementsOnASingleLine: false
+
+BreakBeforeTernaryOperators: true
+
+NamespaceIndentation: All
+
+SortIncludes: true
+BinPackArguments: false
+BinPackParameters: false
+AlignAfterOpenBracket: AlwaysBreak
+AllowAllParametersOfDeclarationOnNextLine: false
+BreakBeforeBraces: Linux
+
+Language: Cpp
+ColumnLimit: 100
