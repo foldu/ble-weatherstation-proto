@@ -22,7 +22,6 @@ static int
 output_temp(const ws_sensor_values_t *values, ws_sensor_read_result res, struct os_mbuf *mbuf)
 {
     (void)res;
-    // decimal -2/0.01, works for both bme280 and ds18b20
     const int16_t temp = values->temperature;
     return os_mbuf_append(mbuf, &temp, sizeof(temp));
 }
