@@ -12,6 +12,7 @@ ble-weatherstation-proto
    :numbered:
 
    building
+   documentation
    doxygen_index
 
 Indices and tables

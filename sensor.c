@@ -8,11 +8,13 @@
 
 #define BME280_TEMP_ERR_VAL INT16_MIN
 
+/// Sentinel value for unmeasured state
 const timex_t NOT_MEASURED = (timex_t){
     .seconds = 0,
     .microseconds = 0,
 };
 
+/// Trigger a new reading of @p sensor and read into @p values
 static inline ws_sensor_read_result read_sensor(bmx280_t *sensor, ws_sensor_values_t *values)
 {
     values->temperature = bmx280_read_temperature(sensor);
